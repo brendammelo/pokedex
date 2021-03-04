@@ -1,0 +1,40 @@
+{
+    "env": {
+        "es2020": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "react/prefer-stateless-function": [0, { "ignorePureComponents": true }],
+        "no-useless-constructor": 0,
+        "react/jsx-filename-extension": 0,
+        "react/jsx-wrap-multilines": 0,
+        "prettier/prettier": "error",
+        "react/require-default-props": 0,
+        "class-methods-use-this": 0,
+        "no-restricted-syntax":0,
+        "no-use-before-define":0,
+        "no-await-in-loop":0,
+        "prefer-const":0,
+        "import/prefer-default-export":0,
+        "indent": ["error", 2, {"ignoredNodes": ["JSXElement", "JSXAttribute", "JSXIdentifier", "JSXNamespacedName", "JSXMemberExpression", "JSXSpreadAttribute", "JSXExpressionContainer", "JSXOpeningElement", "JSXClosingElement", "JSXText", "JSXEmptyExpression", "JSXSpreadChild"]}],
+    "react/jsx-indent": ["error", 2]
+    }
+
+}
