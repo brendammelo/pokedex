@@ -7,8 +7,8 @@ import SignUp from '../pages/SignUp';
 const Auth = createStackNavigator();
 
 const AuthRoutes = () => (
-    <Auth.Navigator>
-        <Auth.Screen name="SignIn" component={SignIn} />
+  <Auth.Navigator>
+    <Auth.Screen name="SignIn" component={SignIn} />
   </Auth.Navigator>
 );
 

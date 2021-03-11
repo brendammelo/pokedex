@@ -2,38 +2,43 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { SQUIRTLE } from '../../assets';
 
-// import { Container } from './styles';
+import {
+  Container,
+  PokemonContainer,
+  TypeContainer,
+  EvolutionContainer,
+} from './styles';
 
 const PokemonCard = () => {
-    return (
-    <View>
-            <View>
-                <Text>Squirtle</Text>
-                <Text># 002</Text>
-      </View>
-        <Image source={SQUIRTLE} style={{ height: 100, width: 100 }} />
-            <View>
-                <Text>Ghost</Text>
-                <Text>Poison</Text>
+  return (
+    <Container>
+      <PokemonContainer>
+        <Text>Squirtle</Text>
+        <Text># 002</Text>
+      </PokemonContainer>
+      <Image source={SQUIRTLE} style={{ height: 100, width: 100 }} />
+      <TypeContainer>
+        <Text>Ghost</Text>
+        <Text>Poison</Text>
         <Text>asd</Text>
+      </TypeContainer>
+      <View>
+        <Text>Info 1</Text>
+        <Text>Info 2</Text>
+        <Text>Info 3</Text>
       </View>
-        <View>
-              <Text>Info 1</Text>
-              <Text>Info 2</Text>
-                <Text>Info 3</Text>
-            </View>
-        <Text>Evolution</Text>
-            <View>
+      <Text>Evolution</Text>
+      <EvolutionContainer>
         <Text>Gastly</Text>
-                <Text>Haunter</Text>
+        <Text>Haunter</Text>
+        <Text>Gengar</Text>
+      </EvolutionContainer>
+      <View>
+        <Text>Gastly</Text>
+        <Text>Haunter</Text>
         <Text>Gengar</Text>
       </View>
-            <View>
-                <Text>Gastly</Text>
-        <Text>Haunter</Text>
-                <Text>Gengar</Text>
-      </View>
-      </View>
+    </Container>
   );
 };
 
