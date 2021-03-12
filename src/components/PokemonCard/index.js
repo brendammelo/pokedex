@@ -7,6 +7,8 @@ import {
   PokemonContainer,
   TypeContainer,
   EvolutionContainer,
+  EvolutionContainerPhoto,
+  Info,
 } from './styles';
 
 const PokemonCard = () => {
@@ -22,22 +24,22 @@ const PokemonCard = () => {
         <Text>Poison</Text>
         <Text>asd</Text>
       </TypeContainer>
-      <View>
+      <Info>
         <Text>Info 1</Text>
         <Text>Info 2</Text>
         <Text>Info 3</Text>
-      </View>
+      </Info>
       <Text>Evolution</Text>
+      <EvolutionContainerPhoto>
+        <Text>Gastly</Text>
+        <Text>Haunter</Text>
+        <Text>Gengar</Text>
+      </EvolutionContainerPhoto>
       <EvolutionContainer>
         <Text>Gastly</Text>
         <Text>Haunter</Text>
         <Text>Gengar</Text>
       </EvolutionContainer>
-      <View>
-        <Text>Gastly</Text>
-        <Text>Haunter</Text>
-        <Text>Gengar</Text>
-      </View>
     </Container>
   );
 };
