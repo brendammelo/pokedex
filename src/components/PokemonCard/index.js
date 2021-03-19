@@ -22,7 +22,6 @@ const PokemonCard = () => {
       <TypeContainer>
         <Text>Ghost</Text>
         <Text>Poison</Text>
-        <Text>asd</Text>
       </TypeContainer>
       <Info>
         <Text>Info 1</Text>
