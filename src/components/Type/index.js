@@ -2,10 +2,11 @@ import React from 'react';
 import { View, Text, Image } from 'react-native';
 import { Container, TypeName } from './styles';
 
-const Type = ({ color, text }) => {
+const Type = ({ type }) => {
+  console.log(type);
   return (
-    <Container>
-      <TypeName>lala</TypeName>
+    <Container color={type}>
+      <TypeName>{type}</TypeName>
     </Container>
   );
 };
